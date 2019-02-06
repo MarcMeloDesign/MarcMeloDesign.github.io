@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #61892f;
+}
+/* logo */
+#Logo{
+    position: relative;
+    max-width: 35%;
+    max-height: 35%;
+    top: 100px;
+    left: 30%;
+    z-index: 2;
+}
+#Ball {
+     position: relative;
+    -webkit-animation-name: ball; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /*Safari 4.0 - 8.0*/
+     animation-name: ball;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 5px;
+    height: auto;
+      
+   
+
+}
+ @keyframes ball { 
+    from {transform: rotate(0deg) translateX(16%) rotate(0deg)}
+    to {transform: rotate(360deg) translateX(16%) rotate(-360deg)}
+ }
+
+
+/* gallery */
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+    
+ 
+}
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-auto-rows: 65px;
+    grid-auto-flow: dense;
+    margin: 10px;
+    /* background-color: #111; */
+
+
+
+ }
+ .horizontal {
+    grid-column: auto / span 2;
+}
+.vertical {
+    grid-row: auto/ span 2;
+}
+.big {
+    grid-row: auto/ span 2;
+    grid-column: auto / span 2;
+}
+
+/* PORTFOLIO */
+.Portfolio {
+background-color: #111;
+}
+.intro{
+    text-align: center;
+}
+body {
+  width: 100%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header { 
+    border-bottom: 10px solid #86c232;
+    padding: 10px;
+    margin: 10px;
+}
+#summary { 
+    border-bottom: 2px solid #86c232;
+    padding: 10px;
+    margin: 10px;
+}
+    
+#skills { 
+    position: relative;
+    border-bottom: 2px solid #86c232;
+    padding: 10px;
+    margin: 10px;
+}
+    
+#experience { 
+     border-bottom: 2px solid #86c232;
+     padding: 10px;
+     margin: 10px;
+}
+#jobs { 
+    padding: 10px;
+    margin: 10px;
+    
+     
+}
+        
+h1 {
+        color :#61892f;
+        padding: 10px;
+        font-size: 90px
+        
+    }
+h2 {
+        color: white;
+        font-family: "Lucida Sans Unicode", "Comic Sans", Tahoma;
+        padding: 10px;
+        margin: 10px;
+        font-size: 22px
+    } 
+    h4{
+        color: white;
+        padding: 10px;
+    }
+ td{ 
+        color: white;
+        background-color: #86c232;
+        border: 2px solid #86c232;
+        border-radius: 10px;
+        padding: 10px;
+    }
+     #Info{
+        background: none;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        border: none;
+        font-size: 15px;
+        list-style-type: circle;
+        border: none;
+    }
+    p{
+        color: white;
+        font-size: 13px
+    }
+    .Contact{
+        color: #6b6e70;
+    }
+    .Highlight{
+        color: white;
+    }
+    
+    /* Section Backgrounds */
+ #Page1{
+        max-Height:1000px;
+        min-height: 1000px;
+        background-color: #474b4f;
+    }
+ #Page3 {
+    max-Height: 1450px;
+    min-height: 1100px;
+    background-color: #474b4f;
+   }
+ #Page2{
+       background-color: #222629;
+       max-Height: 800px;
+       min-height:  800px;
+   }
+.Main {
+       background-color: #222629;
+   }
+   /* ABOUT ME  */
+  
+.item0 {
+    Display: grid;
+    Grid-template-areas: 
+    'me me space blank blank '
+    'me me space aboutme aboutme'
+    'me me space par par'
+    'info info space par par ';
+    grid-gap: 0px;
+    padding: 20px;
+}
+
+.item1 { 
+    grid-area: me;
+    padding: 30px; 
+    }
+.item2 { grid-area: blank; 
+
+    }
+    /* About Me Text */
+.item3 { grid-area: aboutme;
+font-family:Arial, Helvetica, sans-serif; 
+text-align: center;
+border-left: 5px solid #61892f;
+font-size: 60px
+/* padding: 80px; */
+ 
+ }
+ /* Paragraph */
+
+.item4 { grid-area: par;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-left: 5px solid #61892f;
+    font-size: 12px;
+    color: rgb(158, 158, 158);
+    
+ }
+
+ .item5 { grid-area: space;
+    
+ }
+ .item6{ 
+     grid-area: info;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 12px;
+    
+ }
+ .name{
+     border-bottom:#61892f solid 3px;
+     font-size: 40px;
+     color: #86c232;
+     
+ }
+
+.grid-container {
+    position: absolute;
+  display: inline-grid;
+  grid-gap: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding:  0;
+  font-size: 30px;
+}
+
+.Me{
+    width: 200px;
+    Height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    border: #61892f 5px solid;
+}
+
+.header{
+    background: #61892f;
+}
+h2{
+    color: #61892f;
+}
+
+h1, h3{
+    color: white;
+}
+p{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    
+}
+.WH{
+    color:#61892f;
+}
+.AboutMe{
+    background-color: #111;
+}
+/* IMAGE EXPAND */
+#Bug{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #Bug:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
