@@ -180,7 +180,7 @@ h2 {
  #Page1{
         max-Height:1000px;
         min-height: 1000px;
-        background-color: #474b4f;
+        background-color: #222629;
     }
  #Page3 {
     max-Height: 1450px;
@@ -188,7 +188,7 @@ h2 {
     background-color: #474b4f;
    }
  #Page2{
-       background-color: #222629;
+       background-color: #474b4f;
        max-Height: 800px;
        min-height:  800px;
    }
